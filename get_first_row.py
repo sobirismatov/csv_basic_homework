@@ -6,7 +6,11 @@ def get_first_row(data):
     Return:
         list: First row.
    """
+   data=data.split("\n")
    
-   return
+   return data[0]
+f=open("data.csv")
+data=f.read()
+print(get_first_row(data))
 
 # Read the csv file
